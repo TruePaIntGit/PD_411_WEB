@@ -3,78 +3,198 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Коспект сетевого программирования</title>
+	<title>Пиксельарт</title>
+	<link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-<h1><font face="Monotype Corsiva" size="8">Сетевое программирование</font></h1>
-<h2><font face="Monotype Corsiva" size="7">Введение и определение</font></h2>
-<font face="Monotype Corsiva" size="6">
-<p>Сетевое программирование - это область программирования, занимающаяся разработкой, внедрением, поддержкой сетей.<br>
-В сетевом программировании распространена концепция <b>клиент-серверных приложений</b>, где один компьютер выступает сервером, а второй подключается к нему в качестве клиента.<br>
-Чтобы стандартизовать способы обмена между компьютерами, используются специальные наборы правил
-обмена данными, называемыми <b>протоколами</b>.<br>
-С помощью подобных сетей программисты получили возможность разбивать задачи между несколькими компьютерами в сети, что называется <b>распределёнными вычислениями</b>.
-</p>
-<p>
-	<h2>
-		<font size = '7'>
-			Опреденение сети
-		</font>
-	</h2>
-	<b>Сеть</b> — это группа компьютеров или устройств, соединённых между собой каналами связи.<br>
-	Все эти устройства (компьютеры, маршрутизаторы,
-шлюзы, принтеры) называют <b>узлами сети</b>. Узлы между
-собой соединяются <b>каналами</b>, в качестве которых могут
-использоваться любые линии связи (кабельные, кабельные
-оптические, оптические атмосферные, радио и т.д.). По
-этим <b>каналам</b> связи узлы сети могут взаимодействовать
-между собой, передавая друг другу <b>сообщения</b>.
-По своим размерам сети подразделяются на <b>локальные</b>, объединяющие узлы в пределах одного здания или
-в группе близкорасположенных зданий в пределах района
-и <b>глобальные</b>, объединяющие между собой несколько
-локальных сетей.
-</p>
-	<h2>
-		<font size = '7'>
-			Модель OSI
-		</font>
-	</h2>
-	<b>OSI</b> (Open System Interconnection) - организация, разработавшая стандартную семиуровневую модель протокола.<br>
-	У каждого уровня модели OSI есть особое назначение
-	и каждый из них связан с уровнем находящимся выше
-	и ниже текущего.<br>
-	Вот эти семь уровней:<br>
-	<table align="Center" border=2px>
-		<tr align="Center">
-			<td align="Center">7</td>
-			<td align="Center">Прикладной (Application)</td>
+	<table>
+		<tr>
+			<td bgcolor="yellow" , colspan="4"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="olive", rowspan="9"></td>
+			<td bgcolor="red"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
 		</tr>
-		<tr align="Center">
-			<td align="Center">6</td>
-			<td align="Center">Представительный (Presentation)</td>
+		<tr>
+			<td bgcolor="yellow" , colspan="3"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="red", colspan="2"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
 		</tr>
-		<tr align="Center">
-			<td align="Center">5</td>
-			<td align="Center">Сеансовый (Session)</td>
+		<tr>
+			<td bgcolor="yellow" , colspan="2"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="red", colspan="3"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
 		</tr>
-		<tr align="Center">
-			<td align="Center">4</td>
-			<td align="Center">Транспортный (Transport)</td>
+		<tr>
+			<td bgcolor="yellow"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="red", colspan="4"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
 		</tr>
-		<tr align="Center">
-			<td align="Center">3</td>
-			<td align="Center">Сетевой (Network)</td>
+		<tr>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="red", colspan="5"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
 		</tr>
-		<tr align="Center">
-			<td align="Center">2</td>
-			<td align="Center">Канальный (Data Link)</td>
+		<tr>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="red", colspan="6"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
 		</tr>
-		<tr align="Center">
-			<td align="Center">1</td>
-			<td align="Center">Физический (Physical)</td>
+		<tr>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="red", colspan="7"></td>
+			<td bgcolor="cyan"></td>
+		</tr>
+		<tr>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="red", colspan="8"></td>
+		</tr>
+		<tr>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="cyan"></td>
+		</tr>
+		<tr>
+			<td bgcolor="cyan"></td>
+			<td bgcolor="olive"></td>
+			<td bgcolor="olive"></td>
+			<td bgcolor="olive"></td>
+			<td bgcolor="olive"></td>
+			<td bgcolor="olive"></td>
+			<td bgcolor="olive"></td>
+			<td bgcolor="olive"></td>
+			<td bgcolor="olive"></td>
+			<td bgcolor="olive"></td>
+			<td bgcolor="olive"></td>
+			<td bgcolor="olive"></td>
+			<td bgcolor="olive"></td>
+			<td bgcolor="cyan"></td>
+		</tr>
+		<tr>
+			<td bgcolor="#663300"></td>
+			<td bgcolor="#663300", rowspan="2"></td>
+			<td bgcolor="#663300", rowspan="3"></td>
+			<td bgcolor="#663300", rowspan="4"></td>
+			<td bgcolor="#663300", rowspan="5"></td>
+			<td bgcolor="#663300", rowspan="5"></td>
+			<td bgcolor="#663300", rowspan="5"></td>
+			<td bgcolor="#663300", rowspan="5"></td>
+			<td bgcolor="#663300", rowspan="5"></td>
+			<td bgcolor="#663300", rowspan="5"></td>
+			<td bgcolor="#663300", rowspan="4"></td>
+			<td bgcolor="#663300", rowspan="3"></td>
+			<td bgcolor="#663300", rowspan="2"></td>
+			<td bgcolor="#663300"></td>
+		</tr>
+		<tr>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+		</tr>
+		<tr>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+		</tr>
+		<tr>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+		</tr>
+		<tr>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+		</tr>
+		<tr>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="#663300", colspan="4" , rowspan="2"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+		</tr>
+		<tr>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
+			<td bgcolor="navy"></td>
 		</tr>
 	</table>
-
-</font>
 </body>
 </html>
