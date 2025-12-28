@@ -1,10 +1,11 @@
-table{
-	align:"Center";
-	bordercolor:#FCE883;
-}
-tr,td, th{
-	align:"Center";
-	border: 1px solid black;
-	width: 125px;
-	height: 25px;
-}
+body { font-family: Arial, sans-serif; margin: 20px; }
+    table { border-collapse: collapse; }
+    td {
+      width: 50px; height: 50px;
+      text-align: center; vertical-align: middle;
+      border: 1px solid #000;
+      font-size: 12px;
+      padding: 4px;
+    }
+    .lanthanides, .actinides { background-color: #f0f0f0; }
+    .empty { background-color: #fff; border: none; }
