@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>Geometry PD_411</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Geometry PD_411</h1>
+	<details>
+		<summary>Квадрат</summary>
+		<input type="number" id="square-source" min=0 placeholder="Размер квадрата" onchange="GetInput(Figures.SQUARE)" />
+		<div id="square-result"></div>
+	</details>
+
+	<details>
+		<summary>Треугольник 1</summary>
+		<input type="number" id="triangle1-source" min=0 placeholder="Размер треугольника" onchange="GetInput(Figures.TRIANGLE1)" />
+		<div id="triangle1-result"></div>
+	</details>
+
+	<details>
+		<summary>Треугольник 2</summary>
+		<input type="number" id="triangle2-source" min=0 placeholder="Размер треугольника" onchange="GetInput(Figures.TRIANGLE2)" />
+		<div id="triangle2-result"></div>
+	</details>
+
+	<script src="script.js"></script>
+</body>
+</html>

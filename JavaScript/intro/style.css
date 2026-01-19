@@ -2,9 +2,18 @@
 body
 {
     font-family: Roboto Condensed;
-    font-size: 48px;
+    font-size: 22px;
     /*background-color:lightskyblue;*/
     background-image: linear-gradient(to bottom right, lightskyblue, pink);
     /*height:88vh;*/ /*Viewport Height*/
     background-attachment: fixed;
+}
+summary
+{
+    font-size:32px;
+    font-weight:500;
+}
+input
+{
+    font-size:22px;
 }
