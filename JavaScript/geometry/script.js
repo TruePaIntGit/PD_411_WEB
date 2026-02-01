@@ -28,6 +28,7 @@ function Triangle1(n){
     }
     return f;
 }
+
 function Triangle2(n){
     let f = "";
     let index = n;
